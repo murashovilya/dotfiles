@@ -1,0 +1,64 @@
+{
+  "context_servers": {
+    "browser-tools-context-server": {
+      "enabled": true,
+      "settings": {},
+    },
+    "mcp-server-context7": {
+      "enabled": true,
+      "settings": {
+        "context7_api_key": "",
+      },
+    },
+    "mcp-server-github": {
+      "enabled": true,
+      "settings": {
+        "github_personal_access_token": "",
+      },
+    },
+  },
+  "agent": {
+    "tool_permissions": {
+      "default": "allow",
+    },
+    "default_profile": "write",
+    "default_model": {
+      "provider": "ollama",
+      "model": "qwen3.5-coder",
+    },
+    "model_parameters": [],
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Frappé - No Italics",
+    "dark": "Catppuccin Frappé - No Italics",
+  },
+  "ui_font_size": 20,
+  "buffer_font_size": 25.5,
+  "buffer_line_height": { "custom": 1 },
+  "gutter": {
+    "line_numbers": false,
+    "runnables": false,
+    "breakpoints": false,
+    "folds": false,
+  },
+  "tab_bar": { "show": false },
+  "status_bar": { "experimental.show": false },
+  "autosave": "on_focus_change",
+  "languages": {
+    "Python": {
+      "format_on_save": "on",
+      "language_servers": ["basedpyright", "ruff"],
+      "formatter": [
+        { "language_server": { "name": "ruff" } },
+        { "code_action": "source.organizeImports.ruff" },
+        { "code_action": "source.fixAll.ruff" },
+      ],
+    },
+  },
+}
