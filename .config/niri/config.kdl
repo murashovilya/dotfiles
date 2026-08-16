@@ -1,4 +1,4 @@
-spawn-at-startup "sh" "-c" "firefox & sleep 2 && zeditor"
+spawn-at-startup "sh" "-c" "firefox & sleep 1.5 && zeditor"
 hotkey-overlay {
     skip-at-startup
 }
@@ -39,11 +39,11 @@ cursor {
 }
 screenshot-path "~/screen_%Y-%m-%d_%H-%M-%S.png"
 binds {
-    Mod+Return { spawn "wezterm" ; }
+    Mod+Return { spawn "wezterm"; }
     Mod+B { spawn "firefox"; }
     Mod+Z { spawn "zeditor"; }
     Mod+M { spawn "wezterm" "-e" "yazi"; }
-    Mod+T { spawn "Telegram"; }
+    Mod+T { spawn "niri" "msg" "tabbed" "new"; }
     Mod+D { spawn "fuzzel"; }
     Mod+O { toggle-overview; }
     Mod+F { switch-preset-column-width; }
