@@ -1,4 +1,4 @@
-spawn-at-startup "sh" "-c" "firefox & sleep 1.5 && zeditor"
+spawn-at-startup "sh" "-c" "bash ~/.start.sh & firefox & sleep 2 && zeditor"
 hotkey-overlay {
     skip-at-startup
 }
