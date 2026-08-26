@@ -20,6 +20,9 @@ output "DP-1" {
 output "eDP-1" {
     position x=0 y=1366
 }
+animations {
+    off
+}
 layout {
     preset-column-widths {
         proportion 0.5
@@ -43,7 +46,6 @@ binds {
     Mod+B { spawn "firefox"; }
     Mod+Z { spawn "zeditor"; }
     Mod+M { spawn "wezterm" "-e" "yazi"; }
-    Mod+T { spawn "niri" "msg" "tabbed" "new"; }
     Mod+D { spawn "fuzzel"; }
     Mod+O { toggle-overview; }
     Mod+F { switch-preset-column-width; }
