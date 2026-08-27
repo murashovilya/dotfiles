@@ -10,3 +10,4 @@ text/plain=dev.zed.Zed.desktop
 text/x-script.python=dev.zed.Zed.desktop
 text/x-shellscript=dev.zed.Zed.desktop
 video/mp4=mpv.desktop
+video/webm=mpv.desktop
