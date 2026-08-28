@@ -28,9 +28,10 @@ table.insert(copy_mode, {
   }),
 })
 
-config.font_size = 15.0
+config.font_size = 13.6
 config.hide_tab_bar_if_only_one_tab = true
 config.show_new_tab_button_in_tab_bar = false
+config.use_fancy_tab_bar = false
 config.window_close_confirmation = "NeverPrompt"
 config.keys = {
   {
@@ -71,6 +72,13 @@ config.keys = {
       mods = "CTRL",
     }),
   },
+}
+
+config.window_padding = {
+  left = 1,
+  right = 1,
+  top = 0,
+  bottom = 0,
 }
 
 config.colors = {
