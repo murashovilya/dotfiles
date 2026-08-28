@@ -16,6 +16,7 @@
     "context": "Workspace",
     "bindings": {
       "ctrl-r": ["task::Spawn", { "task_name": "Run file" }],
+      "ctrl-shift-b": "git::Branch",
     },
   },
   {
