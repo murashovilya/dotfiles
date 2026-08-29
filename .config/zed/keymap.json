@@ -2,7 +2,8 @@
   {
     "context": "ProjectPanel",
     "bindings": {
-      "ctrl-enter": "project_panel::OpenPermanent",
+      "enter": "project_panel::OpenPermanent",
+      "ctrl-enter": "project_panel::Rename",
     },
   },
   {
@@ -25,6 +26,7 @@
       "ctrl-c": "terminal::Copy",
       "ctrl-v": "terminal::Paste",
       "ctrl-z": ["terminal::SendKeystroke", "ctrl-c"],
+      "ctrl-w": "pane::CloseActiveItem",
     },
   },
 ]
