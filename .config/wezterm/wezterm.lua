@@ -28,7 +28,8 @@ table.insert(copy_mode, {
   }),
 })
 
-config.font_size = 13.6
+config.font_size = 13.5
+config.color_scheme = "Catppuccin Macchiato"
 config.hide_tab_bar_if_only_one_tab = true
 config.show_new_tab_button_in_tab_bar = false
 config.use_fancy_tab_bar = false
@@ -79,16 +80,6 @@ config.window_padding = {
   right = 1,
   top = 0,
   bottom = 0,
-}
-
-config.colors = {
-  background = "#2f2f2f",
-  tab_bar = {
-    active_tab = {
-      bg_color = "#2f2f2f",
-      fg_color = "#ffffff",
-    },
-  },
 }
 
 config.key_tables = {
