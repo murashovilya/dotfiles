@@ -1,9 +1,11 @@
 [
   {
-    "context": "ProjectPanel",
+    "context": "Workspace",
     "bindings": {
-      "enter": "project_panel::OpenPermanent",
-      "ctrl-enter": "project_panel::Rename",
+      "ctrl-r": ["task::Spawn", { "task_name": "Run file" }],
+      "ctrl-^": "workspace::NewTerminal",
+      "ctrl-@": "terminal_panel::Toggle",
+      "ctrl-shift-b": "git::Branch",
     },
   },
   {
@@ -14,10 +16,10 @@
     },
   },
   {
-    "context": "Workspace",
+    "context": "ProjectPanel",
     "bindings": {
-      "ctrl-r": ["task::Spawn", { "task_name": "Run file" }],
-      "ctrl-shift-b": "git::Branch",
+      "enter": "project_panel::OpenPermanent",
+      "ctrl-r": "project_panel::Rename",
     },
   },
   {
@@ -26,7 +28,10 @@
       "ctrl-c": "terminal::Copy",
       "ctrl-v": "terminal::Paste",
       "ctrl-z": ["terminal::SendKeystroke", "ctrl-c"],
+      "ctrl-b": "workspace::ToggleLeftDock",
+      "ctrl-^": "workspace::NewTerminal",
       "ctrl-w": "pane::CloseActiveItem",
+      "ctrl-@": "terminal_panel::Toggle",
     },
   },
 ]
